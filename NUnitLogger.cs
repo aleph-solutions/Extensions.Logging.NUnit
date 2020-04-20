@@ -69,6 +69,7 @@ namespace Extensions.Logging.NUnit
         private void WriteMessage(string message, string name)
         {
             NUnitFramework.TestContext.Progress.WriteLine(message);
+            NUnitFramework.TestContext.Out.WriteLine(message);
         }
 
         private class NoopDisposable : IDisposable
